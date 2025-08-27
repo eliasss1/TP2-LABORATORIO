@@ -1,0 +1,40 @@
+# ==============================
+# NetBeans IDE
+# ==============================
+
+# Configuración privada del proyecto
+nbproject/private/
+
+# Archivos de compilación y distribución
+build/
+dist/
+nbbuild/
+nbdist/
+
+# Configuración de Gradle en NetBeans (si aplica)
+.nb-gradle/
+
+# ==============================
+# Java
+# ==============================
+
+# Archivos compilados
+*.class
+
+# Dependencias externas si no se usan gestores (Maven/Gradle)
+lib/
+
+# Archivos de log
+*.log
+
+# ==============================
+# Sistemas operativos
+# ==============================
+.DS_Store      # macOS
+Thumbs.db      # Windows
+
+# ==============================
+# IDEs alternativos (por si se abren en otros IDEs)
+# ==============================
+*.iml
+.idea/
