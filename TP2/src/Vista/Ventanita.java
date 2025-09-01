@@ -27,12 +27,18 @@ public class Ventanita extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        lblPresentacion1 = new javax.swing.JLabel();
         jDesktopPane1 = new javax.swing.JDesktopPane();
         jPanel1 = new javax.swing.JPanel();
         txtPasssword = new javax.swing.JPasswordField();
         txtMail = new javax.swing.JTextField();
         btnRegistro = new javax.swing.JButton();
         lblPresentacion = new javax.swing.JLabel();
+        lblPresentacion2 = new javax.swing.JLabel();
+        lblPresentacion3 = new javax.swing.JLabel();
+
+        lblPresentacion1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblPresentacion1.setText("Hola, registrate");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -52,11 +58,22 @@ public class Ventanita extends javax.swing.JFrame {
                 txtMailCaretUpdate(evt);
             }
         });
+        txtMail.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtMailActionPerformed(evt);
+            }
+        });
 
         btnRegistro.setText("Registrarse");
 
         lblPresentacion.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblPresentacion.setText("Hola, registrate");
+
+        lblPresentacion2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblPresentacion2.setText("Ingrese usuario");
+
+        lblPresentacion3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblPresentacion3.setText("Ingrese contraseña");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -65,24 +82,30 @@ public class Ventanita extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(100, 100, 100)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(txtPasssword, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblPresentacion, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtMail, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtPasssword, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnRegistro))
-                .addContainerGap(112, Short.MAX_VALUE))
+                    .addComponent(btnRegistro)
+                    .addComponent(lblPresentacion2, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblPresentacion3))
+                .addContainerGap(106, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(28, Short.MAX_VALUE)
+                .addGap(14, 14, 14)
                 .addComponent(lblPresentacion)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 15, Short.MAX_VALUE)
+                .addComponent(lblPresentacion2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtMail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
+                .addComponent(lblPresentacion3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtPasssword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(41, 41, 41)
+                .addGap(30, 30, 30)
                 .addComponent(btnRegistro)
-                .addGap(32, 32, 32))
+                .addGap(51, 51, 51))
         );
 
         jDesktopPane1.setLayer(jPanel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
@@ -92,16 +115,16 @@ public class Ventanita extends javax.swing.JFrame {
         jDesktopPane1Layout.setHorizontalGroup(
             jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jDesktopPane1Layout.createSequentialGroup()
-                .addGap(41, 41, 41)
+                .addGap(47, 47, 47)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(54, Short.MAX_VALUE))
+                .addContainerGap(48, Short.MAX_VALUE))
         );
         jDesktopPane1Layout.setVerticalGroup(
             jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jDesktopPane1Layout.createSequentialGroup()
-                .addGap(33, 33, 33)
+                .addGap(16, 16, 16)
                 .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(47, Short.MAX_VALUE))
+                .addContainerGap(29, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -125,6 +148,10 @@ public class Ventanita extends javax.swing.JFrame {
     private void txtMailCaretUpdate(javax.swing.event.CaretEvent evt) {//GEN-FIRST:event_txtMailCaretUpdate
         // TODO add your handling code here:
     }//GEN-LAST:event_txtMailCaretUpdate
+
+    private void txtMailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtMailActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtMailActionPerformed
 
     /**
      * @param args the command line arguments
@@ -166,6 +193,9 @@ public class Ventanita extends javax.swing.JFrame {
     private javax.swing.JDesktopPane jDesktopPane1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel lblPresentacion;
+    private javax.swing.JLabel lblPresentacion1;
+    private javax.swing.JLabel lblPresentacion2;
+    private javax.swing.JLabel lblPresentacion3;
     private javax.swing.JTextField txtMail;
     private javax.swing.JPasswordField txtPasssword;
     // End of variables declaration//GEN-END:variables
