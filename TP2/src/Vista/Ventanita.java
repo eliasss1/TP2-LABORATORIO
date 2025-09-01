@@ -6,7 +6,7 @@ package Vista;
 
 /**
  *
- * @author elias
+ * @author eliasssssssssssssssssssssssssss
  */
 public class Ventanita extends javax.swing.JFrame {
 
