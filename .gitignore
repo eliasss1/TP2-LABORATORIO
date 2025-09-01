@@ -7,18 +7,10 @@
 *.ear
 
 # === Directorios de compilación y empaquetado (Ant, Maven, Gradle) ===
-build/
-dist/
-out/
-target/
-
-# === Archivos de NetBeans ===
-nbproject/private/
-nbbuild/
-dist/
-nbdist/
-.nb-gradle/
-*.orig
+./TP2/build
+./TP2/dist
+./TP2/out
+./TP2/target
 
 # === Archivos de Eclipse ===
 .classpath
