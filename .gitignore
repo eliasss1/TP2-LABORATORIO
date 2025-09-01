@@ -1,40 +1,49 @@
-# ==============================
-# NetBeans IDE
-# ==============================
+# === Archivos de compilación Java ===
+*.class
+*.log
+*.ctxt
+*.jar
+*.war
+*.ear
 
-# Configuración privada del proyecto
-nbproject/private/
-
-# Archivos de compilación y distribución
+# === Directorios de compilación y empaquetado (Ant, Maven, Gradle) ===
 build/
 dist/
+out/
+target/
+
+# === Archivos de NetBeans ===
+nbproject/private/
 nbbuild/
+dist/
 nbdist/
-
-# Configuración de Gradle en NetBeans (si aplica)
 .nb-gradle/
+*.orig
 
-# ==============================
-# Java
-# ==============================
+# === Archivos de Eclipse ===
+.classpath
+.project
+.settings/
+bin/
 
-# Archivos compilados
-*.class
-
-# Dependencias externas si no se usan gestores (Maven/Gradle)
-lib/
-
-# Archivos de log
-*.log
-
-# ==============================
-# Sistemas operativos
-# ==============================
-.DS_Store      # macOS
-Thumbs.db      # Windows
-
-# ==============================
-# IDEs alternativos (por si se abren en otros IDEs)
-# ==============================
-*.iml
+# === Archivos de IntelliJ IDEA ===
 .idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# === Archivos de VS Code ===
+.vscode/
+
+# === Archivos del sistema operativo ===
+.DS_Store
+Thumbs.db
+
+# === Configuración de usuario ===
+*.swp
+*.swo
+*.tmp
+
+# === Librerías descargadas localmente (opcional, si no se versionan) ===
+lib/

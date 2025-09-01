@@ -4,6 +4,10 @@
  */
 package Vista;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author elias
@@ -16,6 +20,26 @@ public class Ventanita extends javax.swing.JFrame {
     public Ventanita() {
         initComponents();
         this.setLocationRelativeTo(null);
+        this.setTitle("Login");
+
+        btnRegistro.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                btnRegistroActionPerformed(e);
+            }
+        });
+    }
+    
+    private void btnRegistroActionPerformed(java.awt.event.ActionEvent evt) {                                            
+        String mail = txtMail.getText();
+        
+        String password = new String(txtPasssword.getPassword());
+
+        if (mail.equals("alumno@ulp.edu.ar") && password.equals("12345678")) {
+            JOptionPane.showMessageDialog(this, "¡Bienvenido/a!");
+        } else {
+            JOptionPane.showMessageDialog(this, "Usuario y/o contraseña incorrectos", "Error", JOptionPane.ERROR_MESSAGE);
+        }
     }
 
     /**
