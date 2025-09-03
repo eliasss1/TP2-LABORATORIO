@@ -220,7 +220,7 @@ public class Conversor extends javax.swing.JFrame {
                                            resultadoFinal,
                                            unidadFinalSimbolo);
             
-            JOptionPane.showMessageDialog(this, mensaje, "Resultado de la Conversión", JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(this, mensaje, "Resultado de la Conversión es", JOptionPane.INFORMATION_MESSAGE);
 
         } catch (NumberFormatException e) {
             JOptionPane.showMessageDialog(this, "El valor ingresado no es un número válido. Por favor, corríjalo.", "Error de Formato", JOptionPane.ERROR_MESSAGE);
