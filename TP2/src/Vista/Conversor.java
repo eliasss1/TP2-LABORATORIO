@@ -49,7 +49,7 @@ public class Conversor extends javax.swing.JFrame {
         rbtHaciaKelvin = new javax.swing.JRadioButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Conversor de Temperatura Mejorado");
+        setTitle("Conversor de Temperatura Enhanced");
 
         jLabel1.setFont(new java.awt.Font("Segoe UI Black", 1, 24)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
