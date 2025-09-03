@@ -18,6 +18,7 @@ public class Conversor extends javax.swing.JFrame {
     public Conversor() {
         initComponents();
         this.setLocationRelativeTo(null); 
+      this.setResizable(false);
     }
 
     /**
