@@ -55,7 +55,7 @@ public class Conversor extends javax.swing.JFrame {
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Conversor de Temperatura");
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
         jLabel2.setText("Ingrese la temperatura:");
 
         txtTemperatura.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
