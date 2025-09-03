@@ -19,6 +19,8 @@ public class Conversor extends javax.swing.JFrame {
         initComponents();
         this.setLocationRelativeTo(null); 
         this.setResizable(false);
+        
+         jLabel1.setFont(new java.awt.Font("Arial", java.awt.Font.BOLD, 24));
     }
 
     /**
